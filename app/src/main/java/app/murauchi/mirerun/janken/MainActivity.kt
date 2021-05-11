@@ -17,18 +17,18 @@ class MainActivity : AppCompatActivity() {
 
             when (number) {
                 0 -> {
-                    cpu.text = "相手の手はグーです" //相手＝cpu
+                    cpu.setImageResource(R.drawable.goo) //相手＝cpuの手はグーです
                     result.text = "引き分けです"
                     result.setTextColor(Color.rgb(0, 255, 0 ))
                 }
                 1 -> {
-                    cpu.text = "相手の手はチョキです"
+                    cpu.setImageResource(R.drawable.choki)
                     result.text = "あなたの勝ちです"
                     //result.setTextColor(Color.parseColor("f44336"))
                     result.setTextColor(Color.rgb(255, 0, 0 ))
                 }
                 2 -> {
-                    cpu.text = "相手の手はパーです"
+                    cpu.setImageResource(R.drawable.paa)
                     result.text = "あなたの負けです"
                     result.setTextColor(Color.rgb(0, 0, 255 ))
                 }
@@ -41,17 +41,17 @@ class MainActivity : AppCompatActivity() {
 
             when (number) {
                 0 -> {
-                    cpu.text = "相手の手はグーです"
+                    cpu.setImageResource(R.drawable.goo)
                     result.text = "あなたの負けです"
                     result.setTextColor(Color.rgb(0, 0, 255 ))
                 }
                 1 -> {
-                    cpu.text = "相手の手はチョキです"
+                    cpu.setImageResource(R.drawable.choki)
                     result.text = "引き分けです"
                     result.setTextColor(Color.rgb(0, 255, 0 ))
                 }
                 2 -> {
-                    cpu.text = "相手の手はパーです"
+                    cpu.setImageResource(R.drawable.paa)
                     result.text = "あなたの勝ちです"
                     result.setTextColor(Color.rgb(255, 0, 0 ))
 
@@ -65,17 +65,17 @@ class MainActivity : AppCompatActivity() {
 
             when (number) {
                 0 -> {
-                    cpu.text = "相手の手はグーです"
+                    cpu.setImageResource(R.drawable.goo)
                     result.text = "あなたの勝ちです"
                     result.setTextColor(Color.rgb(255, 0, 0 ))
                 }
                 1 -> {
-                    cpu.text = "相手の手はチョキです"
+                    cpu.setImageResource(R.drawable.choki)
                     result.text = "あなたの負けです"
                     result.setTextColor(Color.rgb(0, 0, 255 ))
                 }
                 2 -> {
-                    cpu.text = "相手の手はパーです"
+                    cpu.setImageResource(R.drawable.paa)
                     result.text = "引き分けです"
                     result.setTextColor(Color.rgb(0, 255, 0 ))
                 }
