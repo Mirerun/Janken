@@ -12,13 +12,12 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/Player"
+            android:id="@+id/result"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="26dp"
-            android:text="Player"
+            android:layout_marginTop="17dp"
+            android:text="勝敗"
             android:textSize="30sp" />
 
         <ImageView
@@ -28,43 +27,59 @@
             android:layout_gravity="center"
             app:srcCompat="@drawable/choki" />
 
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="243dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/gooButton"
+                    android:layout_width="152.3dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/goome" />
+
+                <ImageButton
+                    android:id="@+id/chokiButton"
+                    android:layout_width="152.3dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/chokime" />
+
+                <ImageButton
+                    android:id="@+id/paaButton"
+                    android:layout_width="152.3dp"
+                    android:layout_height="209dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/paame" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableLayout>
+
         <TextView
-            android:id="@+id/result"
+            android:id="@+id/Player"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="17dp"
-            android:text="勝敗"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="26dp"
+            android:text="Player"
             android:textSize="30sp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/gooButton"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="0dp"
-                android:layout_weight="1"
-                android:text="グー" />
-
-            <Button
-                android:id="@+id/chokiButton"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="チョキ" />
-
-            <Button
-                android:id="@+id/paaButton"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="0dp"
-                android:layout_weight="1"
-                android:text="パー" />
-        </LinearLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
